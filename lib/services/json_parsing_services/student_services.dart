@@ -1,7 +1,7 @@
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
-import 'package:flutter_example_app/models/student_model.dart';
+import 'package:flutter_example_app/models/json_parsing_models/student_model.dart';
 
 Future<String> _loadAStudentAsset() async {
   return await rootBundle.loadString('assets/student.json');

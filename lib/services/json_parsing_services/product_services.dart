@@ -1,6 +1,6 @@
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter_example_app/models/product_model.dart';
+import 'package:flutter_example_app/models/json_parsing_models/product_model.dart';
 import 'dart:convert';
 
 Future<String> _loadAProductAsset() async {
