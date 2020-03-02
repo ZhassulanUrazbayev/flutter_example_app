@@ -13,7 +13,7 @@ class MyCatalog extends StatelessWidget {
           SliverToBoxAdapter(child: SizedBox(height: 12)),
           SliverList(
             delegate: SliverChildBuilderDelegate(
-                (context, index) => _MyListItem(index)),
+                    (context, index) => _MyListItem(index)),
           ),
         ],
       ),
@@ -44,19 +44,7 @@ class _MyAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      flexibleSpace: FlexibleSpaceBar(
-        centerTitle: true,
-        title: Text(
-          'Collapsing Toolbar Catalog Page',
-          style: TextStyle(color: Colors.white, fontSize: 16.0),
-        ),
-        background: Image.network(
-          "https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&h=350",
-          fit: BoxFit.cover,
-        ),
-      ),
-      expandedHeight: 100,
-      pinned: true,
+      title: Text('Catalog', style: Theme.of(context).textTheme.display4),
       floating: true,
       actions: [
         IconButton(
